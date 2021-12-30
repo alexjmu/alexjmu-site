@@ -12,14 +12,45 @@
       body {
         background-color: black;
         color: white;
-        font-family: "Times New Roman", Times, serif;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      section {
+        font-size: 1.5em;
+      }
+      a {
+        color: lightskyblue;
+      }
+      a:visited {
+        color: lightskyblue;
+      }
+      a:hover {
+        color: lightblue;
+      }
+      .container {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        margin: 0 30%;
+      }
+      /* small margin looks better on mobile */
+      @media (max-width: 500px) {
+        .container {
+          margin: 0 5%;
+        }
       }
     </style>
   </head>
 
   <body>
-    <h1>Hi.</h1>
-    <p>I'm Alex J Mueller. <a href="https://github.com/alexjmu">Github</a></p>
+    <div class="container">
+      <section>
+        <h1>Hi.</h1>
+        <p>
+          I'm Alex.
+          <a href="https://github.com/alexjmu">Github</a>
+        </p>
+      </section>
+    </div>
   </body>
   <!-- Hello :) -->
 </html>
